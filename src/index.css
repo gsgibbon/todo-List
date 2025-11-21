@@ -2,6 +2,7 @@
 
 @theme {
   --color-*: initial;
+
   --color-white: #ffffff;
 
   --color-gray-100: #F7F3F6;
@@ -12,7 +13,7 @@
   --color-green-light: #CDDFCC;
   --color-green-base: #52A350;
   --color-green-dark: #2F5C2D;
-
+  
   --color-pink-light: #E9CCE1;
   --color-pink-base: #C257A4;
   --color-pink-dark: #884074;
