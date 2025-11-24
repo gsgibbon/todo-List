@@ -1,28 +1,17 @@
-import TrashIcon from "./assets/icons/trash.svg?react";
-import SpennerIcon from "./assets/icons/spinner.svg?react";
-import Text from "./components/text";
-import Icon from "./components/icon";
-import Badge from "./components/badge";
+import { BrowserRouter, Route, Routes } from "react-router";
+import { PageComponents } from "./pages/page-components";
+import LayoutMain from "./pages/layout-main";
+import PageHome from "./pages/page-home";
 
 export default function App() {
   return (
-    <div className="grid gap-3">
-      <div className="flex flex-col gap-1">
-        <Text variant="body-md-bold" className="text-green-base">
-          Hello World
-        </Text>
-        <Text>Hello World</Text>
-      </div>
-
-      <div className="flex gap-1">
-        <Icon svg={TrashIcon}/>
-        <Icon svg={SpennerIcon} animate />
-      </div>
-
-      <div>
-        <Badge>1</Badge>
-        <Badge variant="secundary">2</Badge>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<LayoutMain />}>
+          <Route index element={<PageHome />} />
+          <Route path="/componentes" element={<PageComponents />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
