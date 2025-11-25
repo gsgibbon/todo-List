@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import Text from "../text";
+import Text from "../../../components/text";
 
 export default function Footer() {
   return (

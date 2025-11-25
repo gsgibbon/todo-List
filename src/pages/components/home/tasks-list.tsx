@@ -1,5 +1,5 @@
 import Button from "../../../components/button";
-import PlusIcon from "../../assets/icons/plus.svg?react";
+import PlusIcon from "../../../assets/icons/plus.svg?react";
 import TaskItem from "./task-item";
 
 export default function TasksList(){

@@ -1,13 +1,13 @@
 import React from "react";
-import ButtonIcon from "../../components/button-icon";
-import Card from "../../components/card";
-import InputCheckBox from "../../components/input-checkbox";
-import Text from "../../components/text";
-import TrashIcon from "../../assets/icons/trash.svg?react";
-import PencilIcon from "../../assets/icons/pencil.svg?react";
-import XIcon from "../../assets/icons/x.svg?react";
-import CheckIcon from "../../assets/icons/check.svg?react";
-import InputText from "../../components/input-text";
+import ButtonIcon from "../../../components/button-icon";
+import Card from "../../../components/card";
+import InputCheckBox from "../../../components/input-checkbox";
+import Text from "../../../components/text";
+import TrashIcon from "../../../assets/icons/trash.svg?react";
+import PencilIcon from "../../../assets/icons/pencil.svg?react";
+import XIcon from "../../../assets/icons/x.svg?react";
+import CheckIcon from "../../../assets/icons/check.svg?react";
+import InputText from "../../../components/input-text";
 
 export default function TaskItem() {
   const [isEditing, setIsEditing] = React.useState(false);
